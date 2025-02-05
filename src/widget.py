@@ -1,5 +1,5 @@
-from src.masks import get_mask_account, get_mask_card_number
-
+from src.masks import get_mask_account
+from src.masks import get_mask_card_number
 
 
 def mask_account_card(user_card: str) -> str:
@@ -15,4 +15,3 @@ def mask_account_card(user_card: str) -> str:
 def get_date(user_date: str) -> str:
     """Преобразует формат даты"""
     return f"{user_date[8:10]}.{user_date[5:7]}.{user_date[:4]}"
-
