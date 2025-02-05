@@ -10,3 +10,5 @@ def get_mask_account(account_number: str) -> str:
 
 print(get_mask_card_number("7000792289606361"))
 print(get_mask_account("73654108430135874305"))
+
+
