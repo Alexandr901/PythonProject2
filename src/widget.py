@@ -15,5 +15,5 @@ def mask_account_card(user_card: str) -> str:
 def get_date(user_date: str) -> str:
     """Преобразует формат даты"""
     if len(user_date) < 10:
-        raise (ValueError)
+        raise ValueError
     return f"{user_date[8:10]}.{user_date[5:7]}.{user_date[:4]}"
