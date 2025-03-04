@@ -24,7 +24,7 @@
 
 ```python
 
-from src.processing.processing import filter_by_state
+from src.processing import filter_by_state
 
 operations_data = [
     {'id': 939719570, 'state': 'EXECUTED', 'date': '2018-06-30T02:08:58.425572'},
@@ -53,5 +53,6 @@ print(sorted_ops_desc)
 - `masks`: функции `get_mask_card_number` и `get_mask_account`.
 - `widget`: функции `get_account_card` и `get_data`.
 - `processing`: функции `filter_by_state` и `sort_by_date`.
+- `generators`: функции и генераторы `filter_by_currency`, `transaction_descriptions` и `card_number_generator`.
 
 Покрытие тестами составляет более 80% кода проекта.

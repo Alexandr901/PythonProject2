@@ -5,7 +5,6 @@ from src.generators import filter_by_currency
 from src.generators import transaction_descriptions
 
 
-
 def test_filter_by_currency(transactions):
     usd_transactions = list(filter_by_currency(transactions, "USD"))
     assert len(usd_transactions) == 3
@@ -22,7 +21,6 @@ def test_filter_by_currency(transactions):
     assert len(no_currency_transactions) == 0
 
 
-
 def test_transaction_descriptions(transactions):
     descriptions = list(transaction_descriptions(transactions))
     assert len(descriptions) == 5
@@ -36,10 +34,8 @@ def test_transaction_descriptions(transactions):
     ]
     assert descriptions == expected_descriptions
 
-
     empty_descriptions = list(transaction_descriptions([]))
     assert len(empty_descriptions) == 0
-
 
 
 @pytest.mark.parametrize(
