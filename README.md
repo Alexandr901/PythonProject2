@@ -54,5 +54,6 @@ print(sorted_ops_desc)
 - `widget`: функции `get_account_card` и `get_data`.
 - `processing`: функции `filter_by_state` и `sort_by_date`.
 - `generators`: функции и генераторы `filter_by_currency`, `transaction_descriptions` и `card_number_generator`.
+- `decorators`: декоратор `log`
 
-Покрытие тестами составляет более 80% кода проекта.
+- Покрытие тестами составляет более 80% кода проекта.
