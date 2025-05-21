@@ -55,5 +55,5 @@ print(sorted_ops_desc)
 - `processing`: функции `filter_by_state` и `sort_by_date`.
 - `generators`: функции и генераторы `filter_by_currency`, `transaction_descriptions` и `card_number_generator`.
 - `decorators`: декоратор `log`
-
+- `utils, external_api`: функции `convert_to_rub` и `load_transactions`
 - Покрытие тестами составляет более 80% кода проекта.
