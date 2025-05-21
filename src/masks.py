@@ -1,7 +1,6 @@
 import logging
 import os.path
 
-
 if not os.path.exists("logs"):
     os.makedirs("logs")
 
@@ -15,6 +14,7 @@ formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(messag
 file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
+
 
 def get_mask_card_number(card_number: str) -> str:
     """Маскирует номер банковской карты"""
