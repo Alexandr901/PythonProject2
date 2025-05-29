@@ -1,8 +1,10 @@
 import os
+
 import requests
 from dotenv import load_dotenv
 
 load_dotenv()
+
 
 def convert_to_rub(transaction: dict) -> float:
     """Конвертирует сумму транзакции в рубли.
