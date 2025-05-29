@@ -1,7 +1,11 @@
-from src.processing import filter_by_state, sort_by_date
-from src.transaction_reader import read_csv, read_excel, search_transactions_by_description
+from src.processing import filter_by_state
+from src.processing import sort_by_date
+from src.transaction_reader import read_csv
+from src.transaction_reader import read_excel
+from src.transaction_reader import search_transactions_by_description
 from src.utils import load_transactions
-from src.widget import get_date, mask_account_card
+from src.widget import get_date
+from src.widget import mask_account_card
 
 
 def main():
@@ -27,9 +31,7 @@ def main():
             break
         elif answer_1 == "3":
             print("Для обработки выбран Excel-файл")
-            operations = read_excel(
-                r"C:\Users\A\PycharmProjects\PythonProject2\data\transactions_excel.xlsx"
-            )
+            operations = read_excel(r"C:\Users\A\PycharmProjects\PythonProject2\data\transactions_excel.xlsx")
             break
         else:
             print("\nОшибка ввода! Такого пункта не существует.\nПопробуйте ещё раз.\n ")
@@ -88,7 +90,9 @@ def main():
 
         if filter3 == "да":
             user_search = input("Введите слово или фразу для поиска: ")
-            filtered_operations_dy_descr = search_transactions_by_description(filtered_operations_dy_currency, user_search)
+            filtered_operations_dy_descr = search_transactions_by_description(
+                filtered_operations_dy_currency, user_search
+            )
             break
         elif filter3 == "нет":
             filtered_operations_dy_descr = filtered_operations_dy_currency
